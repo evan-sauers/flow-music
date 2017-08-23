@@ -1,0 +1,224 @@
+body {
+    margin: 0 auto;    
+}
+
+navBar {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333333;
+    margin: 0 auto;
+}
+
+li {
+    float: left;
+}
+
+li h1 {
+    color: white;
+    padding: 0px 14px 0px 16px;
+}
+
+li a {
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 35px 14px 0px 16px;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+}
+
+h4 {
+    font-size: 1.12em;
+    font-family: 'Oswald', sans-serif;
+}
+
+h5 {
+    font-size: .83em;
+    font-family: 'Oswald', sans-serif;
+}
+
+h6 {
+    font-size: .75em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.about {
+    height: 400px;
+    padding: 95px;
+}
+
+.labels {
+    background-color: #f1f1f1;
+    height: 450px;
+}
+
+.labels:hover {
+    cursor: pointer;
+}
+
+#box1 {
+    float: left;
+    margin: 110px 60px 10px 60px;
+    height: 225px;
+    width: 400px;
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 2%;
+    box-shadow: 10px 10px 5px #e6e6e6;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* For browsers that do not support gradients */        
+    background: -webkit-linear-gradient(-90deg, #66ff66, #4dd2ff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, #66ff66, #4dd2ff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, #66ff66, #4dd2ff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #66ff66, #4dd2ff); /* Standard syntax (must be last) */
+}
+
+#box2 {
+    float: left;
+    height: 225px;
+    width: 400px;
+    margin: 110px 0px 10px 0px;
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 2%;
+    box-shadow: 10px 10px 5px #e6e6e6;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* For browsers that do not support gradients */        
+    background: -webkit-linear-gradient(-90deg, #ffa64d, #ff66b3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, #ffa64d, #ff66b3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, #ffa64d, #ff66b3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #ffa64d, #ff66b3); /* Standard syntax (must be last) */
+}
+
+#box3 {
+    float: left;
+    height: 225px;
+    width: 400px;
+    margin: 110px 60px 10px 60px;
+    
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 2%;
+    box-shadow: 10px 10px 5px #e6e6e6;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+    /* For browsers that do not support gradients */        
+    background: -webkit-linear-gradient(-90deg, #4dd2ff, #aa80ff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, #4dd2ff, #aa80ff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, #4dd2ff, #aa80ff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #4dd2ff, #aa80ff); /* Standard syntax (must be last) */
+}
+
+.button {
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 10px 40px 10px 40px;
+    cursor: pointer;
+    color: white;
+    margin:;
+}
+
+.button:hover {
+    border: 1px solid black;
+    color: black;
+}
+
+#color {
+    height: 400px;
+    width: 800px;
+    float: right;
+    margin: 20px 5px 20px 95px;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 20px 0px 20px 95px;
+}
+
+.slideshow {
+    height: 700px;
+    width: 1000px;
+}
+
+.imageSlides {
+    display: none;
+}
+
+.first {
+    display: block;
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+    
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    cursor: pointer;
+    background-color: #333333;
+    border-radius: 2%;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} 
